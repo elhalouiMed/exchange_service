@@ -1,0 +1,14 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /referenceByDate/:date                           controllers.HomeController.rateByDate(date: String)
+GET     /exchangeRate/:date/:source/:target/:amount      controllers.HomeController.convert(date: String, source: String, target: String, amount: Double)
+GET     /highestPrice/:startDate/:endDate/:currency      controllers.HomeController.highestPrice(startDate: String, endDate: String, currency: String)
+GET     /averagePrice/:startDate/:endDate/:currency      controllers.HomeController.averagePrice(startDate: String, endDate: String, currency: String)
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+
