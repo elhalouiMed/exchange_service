@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "037f7601-f9c4-4c7b-a0da-91e8fbb58358",
+		"name": "exchangeService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get rates by date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/referenceByDate/2022-07-26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"referenceByDate",
+						"2022-07-26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET exchange rate by date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/exchangeRate/2022-07-26/GBP/CAD/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"exchangeRate",
+						"2022-07-26",
+						"GBP",
+						"CAD",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get highest currency price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/highestPrice/2022-01-01/2022-07-26/JPY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"highestPrice",
+						"2022-01-01",
+						"2022-07-26",
+						"JPY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Currency Average price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/averagePrice/2000-01-01/2022-08-13/JPY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"averagePrice",
+						"2000-01-01",
+						"2022-08-13",
+						"JPY"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
