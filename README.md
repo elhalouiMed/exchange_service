@@ -5,3 +5,5 @@ To refresh the data download the latest historical data from the link below http
   $ sbt run
 ## Run unit test
   $ sbt test
+## Postman testing
+To test the API provided by this sample, download the postman json collection and import it into your postman client, then run the service locally and enjoy the API
